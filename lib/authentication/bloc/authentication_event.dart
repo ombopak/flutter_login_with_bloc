@@ -6,4 +6,8 @@ abstract class AuthenticationEvent {
 
 class _AuthenticationStatusChanged extends AuthenticationEvent {
   final AuthenticationStatus status;
+
+  _AuthenticationStatusChanged(this.status);
 }
+
+class AuthenticationLogoutRequested extends AuthenticationEvent {}
